@@ -271,8 +271,13 @@ jobs:
           # Submodule Loop patches:
           # Template for customizing submodule Loop (changes Loop app name to "CustomLoop")
           # Remove the "#" sign from the beginning of the line below to activate:
-          #curl https://github.com/loopnlearn/Loop/commit/d206432b024279ef710df462b20bd464cd9682d4.patch | git apply --directory=Loop -v --whitespace=fix
 
+          # Lower default absorbtion times
+          curl https://github.com/schernic/LoopWorkspace/commit/b9f4526709a3b1ee952c7678e3974850fbb6649f.patch | git apply --directory=Loop -v --whitespace=fix
+
+          # Child Insulin Model
+          curl https://github.com/schernic/LoopWorkspace/commit/08762ebbb840751d4976c7449a4915c05fe1db16.patch | git apply -v --whitespace=fix
+          
           # Submodule LoopKit patches:
           # General template for customizing submodule LoopKit 
           # Copy url from a GitHub commit or pull request and insert below, and remove the "#" sign from the beginning of the line to activate:
